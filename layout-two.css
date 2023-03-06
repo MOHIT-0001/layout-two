@@ -12,10 +12,10 @@ a {
   margin: 0 auto;
 }
 
- #container {
+#container {
   width: 100%;
   height: 100%;
-} 
+}
 
 .row {
   display: flex;
@@ -110,7 +110,7 @@ a {
   justify-content: space-between;
 }
 
-.button-row{
+.button-row {
   height: 30px;
 }
 
@@ -128,9 +128,13 @@ a {
   margin-top: 5%;
 }
 
+#content #section_2 .button-row{
+  justify-content: center;
+}
+
 #content #section_2 :is(.col-1, .col-2, .col-3, .col-4) div:nth-child(4) {
-  width: 80%;
-  flex-wrap: wrap;
+  width: 75%;
+  /* flex-wrap: wrap; */
   margin-left: auto;
   margin-right: auto;
   margin-top: 5%;
@@ -141,31 +145,37 @@ a {
   height: 20px;
 } */
 
-.header-button-blue{
+.header-button-blue {
   background-color: #428bca;
   border-color: #f3f3f3;
+  border-style: solid;
   color: white;
+  border-width: 2px;
   font-size: 0.8rem;
   height: 30px;
-  width: 15%;
+  width: 100px;
 }
 
 .button-blue {
   background-color: #428bca;
   color: white;
+  border-style: solid;
+  border-width: 2px;
   border-color: #f3f3f3;
   font-size: 0.8rem;
   height: 30px;
-  width: 100%;
+  width: 100px;
 }
 .button-white {
   background-color: white;
+  border-style: solid;
+    border-width: 2px;
   border-color: #f3f3f3;
   font-size: 0.8rem;
   height: 30px;
-  width: 100%;
+  width: 100px;
 }
-hr{
+hr {
   border-top: 1px solid #f3f3f3;
   margin-top: 5%;
 }
@@ -174,8 +184,11 @@ hr{
   margin-top: 10%;
 }
 
-@media screen and (max-width: 1000px) {
+.button-row div:nth-child(2) {
+    margin-left: 1%;
+  }
 
+@media screen and (max-width: 1000px) {
   #content #section_2 .row > div {
     width: 32%;
   }
@@ -191,61 +204,47 @@ hr{
   #header .container div div:nth-child(2) {
     font-size: 0.8rem;
   }
+
   #content #section_1 {
     font-size: 1rem;
   }
+
   #content #section_2 :is(.col-1, .col-2, .col-3, .col-4) > div:nth-child(2) {
     font-size: 1rem;
     font-weight: 600;
-    
   }
   #content #section_2 :is(.col-1, .col-2, .col-3, .col-4) > div:nth-child(3) {
-    font-size: 0.9rem;    
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (max-width: 500px) {
+ 
   #top-bar-section-1 :is(.col-2, .col-3, .col-4) {
     display: none;
   }
   #top-bar-section-2 {
     display: block;
   }
-  #content #section_2 .row >div{
+  #content #section_2 .row > div {
     margin: 0 auto;
   }
   #content #section_2 .row > div {
     width: 100%;
   }
+ 
+
   .button-blue {
     font-size: 0.8rem;
-    height: 10vh;
-    width: 120%;
+    width: 130px;
   }
-  .button-white {
-    font-size: 0.8rem;
-    height: 10vh;
-    width: 120%;
-  }
-  .button-row div:nth-child(2) {
-    margin-left: 30%;
-  }
-  
-  .button-blue {
-    font-size: 0.8rem;
-    /* height: 5vh; */
-    width: 80%;
-  }
-    .button-row{
-    justify-content: start;
-    flex-shrink: 0;
-    /* width:100%; */
-  }
+ 
 
   .button-white {
     font-size: 0.8rem;
-    /* height: 5vh; */
-    width: 80%;
+    width: 130px;
   }
-
+  #content #section_2 .row>div{
+    margin-top: 10%;
+  }
 }
