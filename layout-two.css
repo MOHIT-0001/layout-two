@@ -72,11 +72,8 @@ a {
 #header .container div div:nth-child(3) {
   margin-top: 1%;
   padding-bottom: 2%;
+  height: 30px;
 }
-
-/* hr {
-  margin-top: 3%;
-} */
 
 #content {
   margin-top: 5%;
@@ -84,7 +81,6 @@ a {
 
 #content #section_1 {
   font-size: 1.5rem;
-  margin-bottom: 2%;
 }
 
 #content #section_2 .row {
@@ -92,7 +88,7 @@ a {
 }
 
 #content #section_2 :is(.col-1, .col-2, .col-3, .col-4) {
-  width: 20%;
+  width: 24%;
   border: 1px solid #cccccc;
   margin-top: 2%;
 }
@@ -112,6 +108,10 @@ a {
 .button-row {
   display: flex;
   justify-content: space-between;
+}
+
+.button-row{
+  height: 30px;
 }
 
 #content #section_2 :is(.col-1, .col-2, .col-3, .col-4) > div:nth-child(2) {
@@ -137,26 +137,37 @@ a {
   margin-bottom: 10%;
 }
 
+/* #header .container div:nth-child(3){
+  height: 20px;
+} */
 
 .header-button-blue{
   background-color: #428bca;
+  border-color: #f3f3f3;
   color: white;
   font-size: 0.8rem;
-  height: 7vh;
+  height: 30px;
   width: 15%;
 }
 
 .button-blue {
   background-color: #428bca;
   color: white;
+  border-color: #f3f3f3;
   font-size: 0.8rem;
-  height: 5vh;
+  height: 30px;
   width: 100%;
 }
 .button-white {
+  background-color: white;
+  border-color: #f3f3f3;
   font-size: 0.8rem;
-  height: 5vh;
+  height: 30px;
   width: 100%;
+}
+hr{
+  border-top: 1px solid #f3f3f3;
+  margin-top: 5%;
 }
 
 #footer {
@@ -166,13 +177,13 @@ a {
 @media screen and (max-width: 1000px) {
 
   #content #section_2 .row > div {
-    width: 30%;
+    width: 32%;
   }
 }
 
 @media screen and (max-width: 768px) {
   #content #section_2 .row > div {
-    width: 45%;
+    width: 48%;
   }
   #header .container div div:nth-child(1) {
     font-size: 2rem;
@@ -204,7 +215,7 @@ a {
     margin: 0 auto;
   }
   #content #section_2 .row > div {
-    width: 70%;
+    width: 100%;
   }
   .button-blue {
     font-size: 0.8rem;
